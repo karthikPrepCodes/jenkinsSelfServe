@@ -16,7 +16,7 @@ pipelineJob('Playwright_Nightly_Run') {
                     branch('main')
                 }
             }
-            scriptPath('Jenkinsfile') // ensure Jenkinsfile exists in the test repo root
+            scriptPath('voltMoney-playwright-automation/Jenkinsfile') // ensure Jenkinsfile exists in the test repo root
         }
     }
 }

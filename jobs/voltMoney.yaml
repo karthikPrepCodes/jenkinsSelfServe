@@ -1,0 +1,9 @@
+# jobs/playwright-nightly.yaml
+name: "Playwright_Nightly_Run"
+description: "Run Playwright tests nightly from the VoltMoney repo (main) using npx playwright test"
+repo: "https://github.com/karthikPrepCodes/VoltMoney-Assesment-UI-Automation.git"
+branch: "main"
+jenkinsfilePath: "Jenkinsfile" # path inside the test repo to the Jenkinsfile
+cron: "H 2 * * *" # nightly at ~2 AM
+credentialsId: "GIT_CREDENTIALS_ID" # replace with actual Jenkins Git credentials id (or leave blank if public)
+disabled: false
